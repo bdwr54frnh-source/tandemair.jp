@@ -1,28 +1,31 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AIRロビンソン | Tandem AIR System</title>
-  <meta name="description" content="AIRロビンソン / Tandem AIR System 公式サイト">
-  <style>
-    *{box-sizing:border-box} body{margin:0;background:#0b0b0b;color:#f6f1e8;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;min-height:100vh;display:grid;place-items:center;padding:24px}.wrap{width:min(760px,100%);text-align:center}.eyebrow{letter-spacing:.18em;font-size:12px;opacity:.72}.card{margin-top:18px;padding:34px 22px;border:1px solid rgba(224,190,120,.35);border-radius:24px;background:rgba(255,255,255,.04)}h1{margin:0;font-size:clamp(32px,7vw,58px)}h2{margin:10px 0 0;font-size:clamp(20px,4vw,30px);font-weight:600;color:#d9b765}.note{margin:22px auto 0;max-width:560px;line-height:1.8;opacity:.84}.nav{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:28px}.nav a{display:inline-block;padding:12px 18px;border-radius:999px;text-decoration:none;color:#17120b;background:#e1c17f;font-weight:700}.nav a.secondary{color:#f6f1e8;background:transparent;border:1px solid rgba(224,190,120,.55)}footer{margin-top:24px;font-size:12px;opacity:.55}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tandem AIR System | World Time</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#fff;color:#000;font-family:Arial,"Yu Gothic",sans-serif}
+#world{padding:26px 28px 34px;background:#fff}
+h1{text-align:center;font-size:34px;margin:0 0 22px;font-weight:800;letter-spacing:.04em}
+#times{font-size:27px;line-height:1.75;font-weight:700}
+.entry{display:inline-block;white-space:nowrap;margin:0 .08em}.sep{display:inline-block;margin:0 .28em;font-weight:900}
+#basic{border-top:20px solid #111827;padding:64px 24px 84px;text-align:center}
+#basic h2{font-size:42px;margin:0 0 8px}#basic p{font-size:24px;margin:0 0 24px}
+.btn{display:inline-block;background:#111827;color:#fff;text-decoration:none;font-size:22px;font-weight:800;padding:16px 24px;border-radius:8px;margin:8px}
+.links{margin-top:28px}.links a{display:inline-block;color:#000;text-decoration:none;border:2px solid #000;border-radius:999px;padding:11px 16px;margin:6px;font-size:18px;font-weight:700}
+@media(max-width:700px){#world{padding:20px 16px 26px}h1{font-size:28px}#times{font-size:20px;line-height:1.8}#basic{padding:46px 16px 60px}#basic h2{font-size:32px}#basic p{font-size:19px}.btn{font-size:18px;padding:14px 18px}.links a{font-size:16px}}
+</style>
 </head>
 <body>
-  <main class="wrap">
-    <div class="eyebrow">TANDEM AIR SYSTEM</div>
-    <section class="card">
-      <h1>AIRロビンソン</h1>
-      <h2>Tandem AIR System</h2>
-      <p class="note">AIRロビンソン、エレメンタリーコード、早稲田インスペクションの3サイトを相互に行き来できる構成へ統一します。</p>
-      <nav class="nav" aria-label="関連サイト">
-        <a href="https://tandemair.jp/">AIRロビンソン</a>
-        <a class="secondary" href="https://elementarycode.tokyo/">ELEMENTARY CODE</a>
-        <a class="secondary" href="https://waseda-inspection.com/">早稲田インスペクション</a>
-      </nav>
-    </section>
-    <footer>© Tandem AIR System</footer>
-  </main>
+<section id="world"><h1>WORLD TIME</h1><div id="times"></div></section>
+<section id="basic"><h2>基本コード</h2><p>新しいつながり方</p><a class="btn" href="https://elementarycode.tokyo/elementary-code.html">初級コードについて / Elementary Code</a><div class="links"><a href="https://tandemair.jp/">AIRロビンソン</a><a href="https://elementarycode.tokyo/">ELEMENTARY CODE</a><a href="https://waseda-inspection.com/">早稲田インスペクション</a></div></section>
+<script>
+const C=[
+["Algeria","Africa/Algiers"],["Angola","Africa/Luanda"],["Benin","Africa/Porto-Novo"],["Botswana","Africa/Gaborone"],["Burkina Faso","Africa/Ouagadougou"],["Burundi","Africa/Bujumbura"],["Cabo Verde","Atlantic/Cape_Verde"],["Cameroon","Africa/Douala"],["Central African Republic","Africa/Bangui"],["Chad","Africa/Ndjamena"],["Comoros","Indian/Comoro"],["Congo-Brazzaville","Africa/Brazzaville"],["Congo-Kinshasa","Africa/Kinshasa"],["Cote d'Ivoire","Africa/Abidjan"],["Djibouti","Africa/Djibouti"],["Egypt","Africa/Cairo"],["Equatorial Guinea","Africa/Malabo"],["Eritrea","Africa/Asmara"],["Eswatini","Africa/Mbabane"],["Ethiopia","Africa/Addis_Ababa"],["Gabon","Africa/Libreville"],["Gambia","Africa/Banjul"],["Ghana","Africa/Accra"],["Guinea","Africa/Conakry"],["Guinea-Bissau","Africa/Bissau"],["Kenya","Africa/Nairobi"],["Lesotho","Africa/Maseru"],["Liberia","Africa/Monrovia"],["Libya","Africa/Tripoli"],["Madagascar","Indian/Antananarivo"],["Malawi","Africa/Blantyre"],["Mali","Africa/Bamako"],["Mauritania","Africa/Nouakchott"],["Mauritius","Indian/Mauritius"],["Morocco","Africa/Casablanca"],["Mozambique","Africa/Maputo"],["Namibia","Africa/Windhoek"],["Niger","Africa/Niamey"],["Nigeria","Africa/Lagos"],["Rwanda","Africa/Kigali"],["Sao Tome and Principe","Africa/Sao_Tome"],["Senegal","Africa/Dakar"],["Seychelles","Indian/Mahe"],["Sierra Leone","Africa/Freetown"],["Somalia","Africa/Mogadishu"],["South Africa","Africa/Johannesburg"],["South Sudan","Africa/Juba"],["Sudan","Africa/Khartoum"],["Tanzania","Africa/Dar_es_Salaam"],["Togo","Africa/Lome"],["Tunisia","Africa/Tunis"],["Uganda","Africa/Kampala"],["Zambia","Africa/Lusaka"],["Zimbabwe","Africa/Harare"],["Antigua and Barbuda","America/Antigua"],["Bahamas","America/Nassau"],["Barbados","America/Barbados"],["Belize","America/Belize"],["Canada","America/Toronto"],["Costa Rica","America/Costa_Rica"],["Cuba","America/Havana"],["Dominica","America/Dominica"],["Dominican Republic","America/Santo_Domingo"],["El Salvador","America/El_Salvador"],["Grenada","America/Grenada"],["Guatemala","America/Guatemala"],["Haiti","America/Port-au-Prince"],["Honduras","America/Tegucigalpa"],["Jamaica","America/Jamaica"],["Mexico","America/Mexico_City"],["Nicaragua","America/Managua"],["Panama","America/Panama"],["Saint Kitts and Nevis","America/St_Kitts"],["Saint Lucia","America/St_Lucia"],["Saint Vincent and the Grenadines","America/St_Vincent"],["Trinidad and Tobago","America/Port_of_Spain"],["United States","America/New_York"],["Argentina","America/Argentina/Buenos_Aires"],["Bolivia","America/La_Paz"],["Brazil","America/Sao_Paulo"],["Chile","America/Santiago"],["Colombia","America/Bogota"],["Ecuador","America/Guayaquil"],["Guyana","America/Guyana"],["Paraguay","America/Asuncion"],["Peru","America/Lima"],["Suriname","America/Paramaribo"],["Uruguay","America/Montevideo"],["Venezuela","America/Caracas"],["Afghanistan","Asia/Kabul"],["Armenia","Asia/Yerevan"],["Azerbaijan","Asia/Baku"],["Bahrain","Asia/Bahrain"],["Bangladesh","Asia/Dhaka"],["Bhutan","Asia/Thimphu"],["Brunei","Asia/Brunei"],["Cambodia","Asia/Phnom_Penh"],["China","Asia/Shanghai"],["Cyprus","Asia/Nicosia"],["Georgia","Asia/Tbilisi"],["India","Asia/Kolkata"],["Indonesia","Asia/Jakarta"],["Iran","Asia/Tehran"],["Iraq","Asia/Baghdad"],["Israel","Asia/Jerusalem"],["Japan","Asia/Tokyo"],["Jordan","Asia/Amman"],["Kazakhstan","Asia/Almaty"],["Kuwait","Asia/Kuwait"],["Kyrgyzstan","Asia/Bishkek"],["Laos","Asia/Vientiane"],["Lebanon","Asia/Beirut"],["Malaysia","Asia/Kuala_Lumpur"],["Maldives","Indian/Maldives"],["Mongolia","Asia/Ulaanbaatar"],["Myanmar","Asia/Yangon"],["Nepal","Asia/Kathmandu"],["North Korea","Asia/Pyongyang"],["Oman","Asia/Muscat"],["Pakistan","Asia/Karachi"],["Philippines","Asia/Manila"],["Qatar","Asia/Qatar"],["Saudi Arabia","Asia/Riyadh"],["Singapore","Asia/Singapore"],["South Korea","Asia/Seoul"],["Sri Lanka","Asia/Colombo"],["Syria","Asia/Damascus"],["Tajikistan","Asia/Dushanbe"],["Thailand","Asia/Bangkok"],["Timor-Leste","Asia/Dili"],["Turkey","Europe/Istanbul"],["Turkmenistan","Asia/Ashgabat"],["United Arab Emirates","Asia/Dubai"],["Uzbekistan","Asia/Tashkent"],["Vietnam","Asia/Ho_Chi_Minh"],["Yemen","Asia/Aden"],["Palestine","Asia/Gaza"],["Albania","Europe/Tirane"],["Andorra","Europe/Andorra"],["Austria","Europe/Vienna"],["Belarus","Europe/Minsk"],["Belgium","Europe/Brussels"],["Bosnia and Herzegovina","Europe/Sarajevo"],["Bulgaria","Europe/Sofia"],["Croatia","Europe/Zagreb"],["Czech Republic","Europe/Prague"],["Denmark","Europe/Copenhagen"],["Estonia","Europe/Tallinn"],["Finland","Europe/Helsinki"],["France","Europe/Paris"],["Germany","Europe/Berlin"],["Greece","Europe/Athens"],["Hungary","Europe/Budapest"],["Iceland","Atlantic/Reykjavik"],["Ireland","Europe/Dublin"],["Italy","Europe/Rome"],["Latvia","Europe/Riga"],["Liechtenstein","Europe/Vaduz"],["Lithuania","Europe/Vilnius"],["Luxembourg","Europe/Luxembourg"],["Malta","Europe/Malta"],["Moldova","Europe/Chisinau"],["Monaco","Europe/Monaco"],["Montenegro","Europe/Podgorica"],["Netherlands","Europe/Amsterdam"],["North Macedonia","Europe/Skopje"],["Norway","Europe/Oslo"],["Poland","Europe/Warsaw"],["Portugal","Europe/Lisbon"],["Romania","Europe/Bucharest"],["Russia","Europe/Moscow"],["San Marino","Europe/San_Marino"],["Serbia","Europe/Belgrade"],["Slovakia","Europe/Bratislava"],["Slovenia","Europe/Ljubljana"],["Spain","Europe/Madrid"],["Sweden","Europe/Stockholm"],["Switzerland","Europe/Zurich"],["Ukraine","Europe/Kyiv"],["United Kingdom","Europe/London"],["Vatican City","Europe/Vatican"],["Australia","Australia/Sydney"],["Fiji","Pacific/Fiji"],["Kiribati","Pacific/Tarawa"],["Marshall Islands","Pacific/Majuro"],["Micronesia","Pacific/Chuuk"],["Nauru","Pacific/Nauru"],["New Zealand","Pacific/Auckland"],["Palau","Pacific/Palau"],["Papua New Guinea","Pacific/Port_Moresby"],["Samoa","Pacific/Apia"],["Solomon Islands","Pacific/Guadalcanal"],["Tonga","Pacific/Tongatapu"],["Tuvalu","Pacific/Funafuti"],["Vanuatu","Pacific/Efate"]];
+const root=document.getElementById('times'),rows=[];
+C.forEach((x,i)=>{const e=document.createElement('span');e.className='entry';const t=document.createElement('span');e.append(document.createTextNode(x[0]+' '),t);root.appendChild(e);if(i<C.length-1){const s=document.createElement('span');s.className='sep';s.textContent='■';root.appendChild(s)}let f=null;try{f=new Intl.DateTimeFormat('en-GB',{timeZone:x[1],hour12:false,hour:'2-digit',minute:'2-digit'})}catch{}rows.push([t,f])});
+function tick(){const now=new Date();rows.forEach(r=>{if(r[1])r[0].textContent=r[1].format(now)})}tick();setInterval(tick,30000);
+</script>
 </body>
 </html>
