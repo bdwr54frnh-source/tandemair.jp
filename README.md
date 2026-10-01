@@ -1,4 +1,4 @@
-# tandemair.jp（AIRロビンソン紹介）
+# tandemair.tokyo（AIRロビンソン紹介）
 
 GitHub Pages 用静的サイト。
 
@@ -13,5 +13,5 @@ AIRロビンソンのアプリ紹介のみ。Elementary Code・早稲田イン�
 
 ## 公開
 
-- `CNAME` = `tandemair.jp`
+- `CNAME` = `tandemair.tokyo`
 - GitHub Pages のルートをこのフォルダにする（別リポジトリ／別 Pages プロジェクト推奨）
