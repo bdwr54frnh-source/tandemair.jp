@@ -80,6 +80,11 @@
       width: 100%;
       height: auto;
     }
+    .heritage-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr)); gap:12px; margin:20px 0; }
+    .heritage-card { padding:18px; border:1px solid var(--line); border-radius:14px; background:#161b23; }
+    .heritage-card h3 { margin:0 0 8px; font-size:18px; color:var(--text); }
+    .heritage-card p { font-size:14px; }
+    .heritage-card .heritage-kind { color:var(--accent); font-size:12px; }
     footer {
       margin-top: 48px;
       font-size: 12px;
@@ -106,6 +111,28 @@
       <p>AIRロビンソンの飛行船で、世界を一周する35日間の空の冒険へ。</p>
       <p>世界各地の世界遺産や名所を空から訪問。美しい景色を眺めながら、ガイドによる歴史・文化・見どころの案内を楽しめる体験を目指しています。</p>
       <p>音楽とともに国境を越え、世界中の仲間と出会う新しい旅を構想しています。</p>
+      <h3>空から訪れたい世界遺産・世界の絶景</h3>
+      <p>35日間で35か所に限定せず、各地の歴史や自然をガイド付きで巡る旅を計画しています。</p>
+      <div class="heritage-grid">
+        <article class="heritage-card"><h3>🇯🇵 富士山</h3><p class="heritage-kind">日本・世界文化遺産</p><p>標高3,776m。日本一高い山を空から眺め、信仰と芸術の歴史をガイドが案内します。</p></article>
+        <article class="heritage-card"><h3>🇺🇸 グランドキャニオン</h3><p class="heritage-kind">アメリカ・世界自然遺産</p><p>コロラド川が刻んだ壮大な大峡谷。重なり合う地層から地球の歴史をたどります。</p></article>
+        <article class="heritage-card"><h3>🇨🇳 万里の長城</h3><p class="heritage-kind">中国・世界文化遺産</p><p>山の稜線に沿って連なる長城を空からたどり、その建設と防衛の歴史を紹介します。</p></article>
+        <article class="heritage-card"><h3>🇵🇪 マチュピチュ</h3><p class="heritage-kind">ペルー・世界複合遺産</p><p>アンデスの山々に囲まれたインカ文明の遺跡。石造建築と山岳景観を案内します。</p></article>
+        <article class="heritage-card"><h3>🇨🇦 🇺🇸 ナイアガラの滝</h3><p class="heritage-kind">カナダ・アメリカ・世界の絶景</p><p>国境にまたがる巨大な滝を空から眺め、水の力と周辺の自然を紹介します。</p></article>
+        <article class="heritage-card"><h3>🇹🇷 カッパドキア</h3><p class="heritage-kind">トルコ・世界文化遺産</p><p>奇岩と色鮮やかな熱気球が広がる景色。岩窟住居と歴史をたどります。</p></article>
+        <article class="heritage-card"><h3>🇪🇬 ギザのピラミッド</h3><p class="heritage-kind">エジプト・世界文化遺産</p><p>古代エジプトの巨大建造物を上空から見渡し、ファラオの時代を紹介します。</p></article>
+        <article class="heritage-card"><h3>🇰🇭 アンコール</h3><p class="heritage-kind">カンボジア・世界文化遺産</p><p>アンコールワットを中心に、クメール王朝の寺院群を空から巡ります。</p></article>
+        <article class="heritage-card"><h3>🇮🇳 タージマハル</h3><p class="heritage-kind">インド・世界文化遺産</p><p>白い大理石の霊廟と対称的な庭園を眺め、その物語を紹介します。</p></article>
+        <article class="heritage-card"><h3>🇦🇺 グレートバリアリーフ</h3><p class="heritage-kind">オーストラリア・世界自然遺産</p><p>広大なサンゴ礁の海を空から見て、豊かな生態系を学びます。</p></article>
+        <article class="heritage-card"><h3>🇧🇷 🇦🇷 イグアスの滝</h3><p class="heritage-kind">ブラジル・アルゼンチン・世界自然遺産</p><p>熱帯雨林に囲まれた大瀑布を眺め、国境を越える自然の迫力を伝えます。</p></article>
+        <article class="heritage-card"><h3>🇫🇷 モン・サン＝ミシェル</h3><p class="heritage-kind">フランス・世界文化遺産</p><p>潮の満ち引きで表情を変える修道院の島。中世の歴史を案内します。</p></article>
+        <article class="heritage-card"><h3>🇮🇹 ヴェネツィア</h3><p class="heritage-kind">イタリア・世界文化遺産</p><p>運河と島々が織りなす水の都を空から訪ね、その文化を紹介します。</p></article>
+        <article class="heritage-card"><h3>🇻🇳 ハロン湾</h3><p class="heritage-kind">ベトナム・世界自然遺産</p><p>海から突き出す無数の石灰岩の島々。幻想的な湾の成り立ちをガイドします。</p></article>
+        <article class="heritage-card"><h3>🇯🇴 ペトラ遺跡</h3><p class="heritage-kind">ヨルダン・世界文化遺産</p><p>岩を彫って築かれた古代都市の壮観と交易の歴史を紹介します。</p></article>
+        <article class="heritage-card"><h3>🇬🇷 メテオラ</h3><p class="heritage-kind">ギリシャ・世界複合遺産</p><p>巨大な岩柱の上に建てられた修道院群を空から訪ねます。</p></article>
+        <article class="heritage-card"><h3>🇹🇿 セレンゲティ国立公園</h3><p class="heritage-kind">タンザニア・世界自然遺産</p><p>広大なサバンナを眺め、野生動物の移動と生態系を紹介します。</p></article>
+        <article class="heritage-card"><h3>🇪🇨 ガラパゴス諸島</h3><p class="heritage-kind">エクアドル・世界自然遺産</p><p>独自の進化を遂げた生き物たちの島々を空から巡ります。</p></article>
+      </div>
       <p>※世界遺産の空中訪問・ガイド機能は企画・開発中の構想です。現在利用できる機能を示すものではありません。</p>
     </section>
 
